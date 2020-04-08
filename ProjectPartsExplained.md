@@ -17,7 +17,9 @@
 - Project Part 5 - SQL database script
 - Project Part 6 - USE CASE: Application for Nonverbal children
 - Project Part 7 - Functional Requirements Specification for application 'Expression' for nonverbal children based on SRS(software requirements specification)
-- Project Part 8 - SKIPPED IN CLASS 
+- Project Part 8 - SKIPPED IN CLASS
 - Project Part 9 - SKIPPED IN CLASS
 - Project Part 10 -  Implementation of USE CASE
-- Project Part 11 - Create a second USE CASE and amend it to the FRS
+- Project Part 11A  - Create a second USE CASE
+- Project Part 11B -  amend it to the FRS
+- Project Part 12 - Implementation of 2nd USE CASE
