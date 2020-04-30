@@ -130,6 +130,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\MedicalStaffController.cs" />
+    <Compile Include="Controllers\PatientsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -150,6 +151,24 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>MedicalStaffModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Patient.cs">
+      <DependentUpon>PatientModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PatientModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PatientModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PatientModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PatientModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PatientModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PatientModel.edmx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -172,6 +191,16 @@
       <DependentUpon>MedicalStaffModel.edmx</DependentUpon>
       <LastGenOutput>MedicalStaffModel.cs</LastGenOutput>
     </Content>
+    <Content Include="Models\PatientModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>PatientModel.edmx</DependentUpon>
+      <LastGenOutput>PatientModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\PatientModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>PatientModel.edmx</DependentUpon>
+      <LastGenOutput>PatientModel.cs</LastGenOutput>
+    </Content>
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <EntityDeploy Include="Models\MedicalStaffModel.edmx">
@@ -180,6 +209,13 @@
     </EntityDeploy>
     <Content Include="Models\MedicalStaffModel.edmx.diagram">
       <DependentUpon>MedicalStaffModel.edmx</DependentUpon>
+    </Content>
+    <EntityDeploy Include="Models\PatientModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>PatientModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\PatientModel.edmx.diagram">
+      <DependentUpon>PatientModel.edmx</DependentUpon>
     </Content>
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
@@ -211,6 +247,11 @@
     <Content Include="Views\MedicalStaff\Details.cshtml" />
     <Content Include="Views\MedicalStaff\Edit.cshtml" />
     <Content Include="Views\MedicalStaff\Index.cshtml" />
+    <Content Include="Views\Patients\Create.cshtml" />
+    <Content Include="Views\Patients\Delete.cshtml" />
+    <Content Include="Views\Patients\Details.cshtml" />
+    <Content Include="Views\Patients\Edit.cshtml" />
+    <Content Include="Views\Patients\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
